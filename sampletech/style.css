@@ -8,33 +8,39 @@
 p {
   font-size: 14px;
   color: #5a5a5a;
+  line-height: 1.7em;
 }
 
 body {
-  max-width: 1080px;
   margin: 0 auto;
   font-family: "Times New Roman", "Noto Sans JP", "游ゴシック", "Yu Gothic",
     serif;
 }
 
+.wid-box {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 /* ヘッダー */
-header {
+
+.first {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8px;
+  margin: 8px auto;
   padding: 0;
 }
 
-#nav-pc {
+.nav-pc {
   font-size: 14px;
 }
 
-#nav-pc ul {
+.nav-pc ul {
   display: flex;
 }
 
-#nav-pc li {
+.nav-pc li {
   list-style: none;
   margin-right: 24px;
 }
@@ -50,32 +56,35 @@ header a:hover {
 
 /* ロゴ */
 
-#logo-img {
+.logo-img {
   font-size: 29.03px;
   font-weight: bold;
   margin-left: 8px;
   margin-top: 8px;
+  white-space: nowrap;
 }
 
-#logo-img::before {
+.logo-img::before {
   content: url("images/logo.png");
   padding-right: 16px;
   vertical-align: middle;
 }
 
-h3 {
-  white-space: nowrap;
-}
-
 /* メインビジュアル */
 
-#main-message {
+.main-visual {
+  background-color: #b3b3b3;
+  width: 100%;
+  margin: auto;
+}
+
+.main-box {
   background-color: #333;
   width: 100%;
   height: 400px;
   position: relative;
 }
-#main-message > h1 {
+.main-message {
   font-size: 112px;
   color: #fff;
   position: absolute;
@@ -86,7 +95,8 @@ h3 {
   transform: translate(-50%, -50%);
   z-index: 13;
 }
-#main-01 {
+.main-box::after {
+  content: "";
   background-color: #b33636;
   width: 20%;
   height: 400px;
@@ -96,7 +106,8 @@ h3 {
   z-index: 12;
 }
 
-#main-02 {
+.main-box::before {
+  content: "";
   background-color: #5a5a5a;
   width: 20%;
   height: 400px;
@@ -106,13 +117,13 @@ h3 {
   z-index: 11;
 }
 /* 見出し */
-h2 {
+.b-and-f {
   font-size: 34.84px;
   font-weight: bold;
   color: #333;
 }
 
-h2::after {
+.b-and-f::after {
   content: "";
   display: inline-block;
   width: 24px;
@@ -121,7 +132,7 @@ h2::after {
   margin-left: 16px;
 }
 
-h2::before {
+.b-and-f::before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -130,16 +141,29 @@ h2::before {
   margin-right: 16px;
 }
 
-h4 {
+.dai4 {
   font-size: 24.19px;
   font-weight: normal;
   margin: 1.5em 0;
   color: #333;
 }
 
+.dai5 {
+  font-size: 20.16px;
+  font-weight: normal;
+  margin: 1.5em 0;
+  color: #333;
+}
+
+.red-b {
+  font-size: 29.03px;
+  color: #b33636;
+  font-weight: bold;
+}
+
 /* ミッション */
-#mission {
-  margin: 80px auto;
+.mission {
+  margin: 80px auto 120px auto;
 }
 .mission-div {
   display: flex;
@@ -150,18 +174,21 @@ h4 {
   margin: 40px;
 }
 
-.mission-ko > h4,
-p {
+.mission-ko > h4 {
   margin: 40px 24px;
 }
 
-#box-m {
+.mission-ko > p {
+  margin: 0px 24px 40px 24px;
+}
+
+.box-m {
   background-color: #b33636;
   width: 100%;
   min-height: 240px;
 }
 
-#box-m2 {
+.box-m2 {
   background-color: #5a5a5a;
   width: 100%;
   min-height: 240px;
@@ -169,13 +196,110 @@ p {
 }
 
 /* MOREボタン */
-#more-b {
-  height: 60px;
-  width: auto;
-  object-fit: cover;
-  border: solid 4px #333;
+.more {
+  text-align: center;
+  background-color: #333;
+  width: 200px;
+  height: auto;
+  color: #fff;
+  text-decoration-color: #b33636;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  padding: 16px 24px;
 }
 
-#more-b:hover {
-  border: solid 4px #b33636;
+.more::after {
+  content: " →";
+  font-size: 24px;
+}
+
+.more:hover {
+  background-color: #b33636;
+}
+
+.center {
+  text-align: center;
+}
+
+/* プロダクト */
+#product {
+  background-color: #f6f6f6;
+  margin: 80px auto 120px auto;
+}
+
+#product > .wid-box {
+  padding: 40px 0 64px 0;
+}
+
+#product .dai5 {
+  margin: 0.8em 0 1.8em 0;
+}
+
+.product-div {
+  margin: 40px auto;
+  display: flex;
+}
+
+.product-ko {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.product-ko2 {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.product-ko > div {
+  position: relative;
+  margin-right: 20px;
+}
+
+.product-ko2 > div {
+  position: relative;
+  margin-left: 20px;
+}
+
+.box-p {
+  width: 120px;
+  height: 120px;
+  background-color: #5a5a5a;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-p2 {
+  width: 120px;
+  height: 120px;
+  background-color: #d49595;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-p3 {
+  width: 120px;
+  height: 120px;
+  background-color: #b33636;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-p4 {
+  width: 120px;
+  height: 120px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-mago {
+  background-color: #fff;
+  margin: 0 40px 80px 40px;
+  padding: 80px 40px 48px 40px;
+  box-shadow: 8px 8px 16px 0px #d9d9d9;
 }
