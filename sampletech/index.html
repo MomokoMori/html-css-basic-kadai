@@ -28,6 +28,79 @@
               <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </nav>
+          <!-- スマホ用ナビゲーション -->
+          <button
+            class="menu-sp"
+            onclick="document.getElementById('nav-sp').style.display = 'block'"
+          >
+            <img src="images/sanbon.png" alt="ナビゲーションを開く" />
+          </button>
+          <div id="nav-sp">
+            <button
+              class="close"
+              onclick="document.getElementById('nav-sp').style.display = 'none'"
+            >
+              <img src="images/batu.png" alt="ナビゲーションを閉じる" />
+            </button>
+            <nav>
+              <a
+                href="index.html"
+                onclick="document.getElementById('nav-sp').style.display = 'none'"
+                alt="トップページに戻る"
+                ><h3 class="logo-img">SampleTech</h3></a
+              >
+              <ul>
+                <li>
+                  <a
+                    class="menu"
+                    href="mission.html"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >Mission</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu"
+                    href="product.html"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu"
+                    href="index.html#aboutus"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu"
+                    href="index.html#vision"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >Vision</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu"
+                    href="index.html#company"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >Company</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu"
+                    href="index.html#contact"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -43,20 +116,21 @@
         <!-- ミッション -->
         <section class="mission">
           <div class="wid-box">
-            <h2 class="b-and-f">Mission</h2>
+            <h2 class="dai2">Mission</h2>
+            <h6 class="dai6">SampleTechの企業方針</h6>
             <div class="mission-div">
               <div class="mission-ko">
                 <div class="box-m"></div>
-                <h4 class="dai4">例題</h4>
+                <h4 class="dai4">例としての題</h4>
                 <p>
-                  テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。
+                  テキストが入ります。文章が入ります。これは、試験的な文章です。テキストが、入ります。長い文章が、ここに入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。
                 </p>
               </div>
               <div class="mission-ko">
                 <div class="box-m2"></div>
                 <h4 class="dai4">サンプルのタイトル</h4>
                 <p>
-                  文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。
+                  これは、試験的な文章です。テキストが入ります。文章が入ります。テキストが入ります。長い文章が、ここに入ります。文章が入ります。テキストが入ります。
                 </p>
               </div>
             </div>
@@ -68,51 +142,390 @@
         <!-- プロダクト -->
         <section id="product">
           <div class="wid-box">
-            <h2 class="b-and-f">Product</h2>
+            <h2 class="dai2">Product</h2>
+            <h6 class="dai6">商品の紹介</h6>
             <div class="product-div">
               <div class="product-ko">
-                <div class="product-mago">
+                <div class="product-mag">
                   <div class="box-p"></div>
                   <h3 class="red-b">Example</h3>
-                  <h5 class="dai5">最初の見本</h5>
+                  <h5 class="dai5">例を出す</h5>
                   <p>
-                    テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。
+                    テキストが入ります。これは、試験的な文章です。文章が入ります。テキストが入ります。文章が入ります。
                   </p>
                 </div>
-                <div class="product-mago">
+                <div class="product-mag">
                   <div class="box-p2"></div>
                   <h3 class="red-b">Sample</h3>
                   <h5 class="dai5">サンプルを作る</h5>
                   <p>
-                    文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。
+                    文章が入ります。これは、試験的な文章です。テキストが入ります。テキストが、入ります。文章が入ります。テキストが入ります。文章が入ります。
                   </p>
                 </div>
               </div>
               <div class="product-ko2">
-                <div class="product-mago">
+                <div class="product-mag">
                   <div class="box-p3"></div>
                   <h3 class="red-b">Words</h3>
                   <h5 class="dai5">言葉を書く</h5>
                   <p>
-                    テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。
+                    テキストが入ります。長い文章が、ここに入ります。文章が入ります。テキストが入ります。これは、試験的な文章です。テキストが入ります。
                   </p>
                 </div>
-                <div class="product-mago">
+                <div class="product-mag">
                   <div class="box-p4"></div>
                   <h3 class="red-b">Future</h3>
-                  <h5 class="dai5">最終的な目標</h5>
+                  <h5 class="dai5">未来のテクノロジー</h5>
                   <p>
-                    文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。
+                    文章が入ります。テキストが入ります。これは、試験的な文章です。文章が入ります。テキストが入ります。文章が入ります。テキストが入ります。
                   </p>
                 </div>
               </div>
             </div>
             <div class="center">
-              <a href="mission.html" class="more">View more</a>
+              <a href="product.html" class="more">View more</a>
             </div>
+          </div>
+        </section>
+        <!-- アバウト -->
+        <section id="about">
+          <div class="wid-box">
+            <h2 class="dai2">About</h2>
+            <h6 class="dai6">大切にしている３つのステップ</h6>
+            <div class="about-oya">
+              <div class="about-div">
+                <h1 class="about-num"></h1>
+                <h4 class="dai4">Sample</h4>
+                <h5 class="dai5">見本を作る</h5>
+                <p>
+                  これは、試験的な文章です。テキストが、入ります。文章が入ります。長い文章が、ここに入ります。テキストが、入ります。文章が入ります。
+                </p>
+              </div>
+              <div class="about-div">
+                <h1 class="about-num"></h1>
+                <h4 class="dai4">Test</h4>
+                <h5 class="dai5">試してみる</h5>
+                <p>
+                  文章が入ります。テキストが入ります。これは、試験的な文章です。テキストが、入ります。文章が入ります。テキストが入ります。文章が入ります。
+                </p>
+              </div>
+              <div class="about-div">
+                <h1 class="about-num"></h1>
+                <h4 class="dai4">Line up</h4>
+                <h5 class="dai5">並べる</h5>
+                <p>
+                  テキストが入ります。これは、試験的な文章です。長い文章が、ここに入ります。テキストが入ります。文章が入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-last">
+            <div class="box-a"></div>
+            <div class="box-a2"></div>
+            <div class="box-a3"></div>
+            <div class="box-a4"></div>
+          </div>
+        </section>
+        <!-- ヴィジョン -->
+        <section id="vision">
+          <div class="wid-box">
+            <h2 class="dai2">Vision</h2>
+            <h6 class="dai6">７つの将来像</h6>
+            <div class="vision-div">
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">First Letter</span>
+                  <h5 class="dai5">はじめに書くこと</h5>
+                  <p>
+                    これは、試験的な文章です。テキストが、入ります。文章が入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Sample Title</span>
+                  <h5 class="dai5">サンプルタイトル</h5>
+                  <p>
+                    長い文章が、ここに入ります。テキストが入ります。文章が入ります。これは、試験的な文章です。テキストが、入ります。文章が入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Counter</span>
+                  <h5 class="dai5">数える</h5>
+                  <p>
+                    テキストが入ります。これは、試験的な文章です。文章が入ります。長い文章が、ここに入ります。テキストが入ります。文章が入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Example</span>
+                  <h5 class="dai5">例題</h5>
+                  <p>
+                    文章が入ります。これは、試験的な文章です。文章が入ります。テキストが入ります。長い文章が、ここに入ります。テキストが入ります。文章が入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Vision</span>
+                  <h5 class="dai5">どのように見えるか</h5>
+                  <p>
+                    文章が入ります。長い文章が、ここに入ります。これは、試験的な文章です。テキストが、入ります。文章が入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Images</span>
+                  <h5 class="dai5">たくさんの画像</h5>
+                  <p>
+                    これは、試験的な文章です。長い文章が、ここに入ります。テキストが入ります。文章が入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="vision-ko">
+                <div class="kaz">.</div>
+                <img class="img-v" src="images/back2.png" alt="背景画像" />
+                <div class="vision-ko2">
+                  <span class="red-b">Reset Set</span>
+                  <h5 class="dai5">リセットをセット</h5>
+                  <p>
+                    長い文章が、ここに入ります。文章が入ります。これは、試験的な文章です。テキストが、入ります。文章が入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- カンパニー -->
+        <section id="company">
+          <div class="wid-box">
+            <h2 class="dai2">Company</h2>
+            <h6 class="dai6">会社情報</h6>
+            <table class="company-table">
+              <tr>
+                <th class="header-t">会社名</th>
+                <td class="cell">株式会社SampleTech</td>
+              </tr>
+              <tr>
+                <th class="header-t">所在地</th>
+                <td class="cell">
+                  〒000-0000 東京都港区仮場所0丁目000-00 サンプルビル7階
+                </td>
+              </tr>
+              <tr>
+                <th class="header-t">代表者</th>
+                <td class="cell">代表取締役 サンプル</td>
+              </tr>
+              <tr>
+                <th class="header-t">設立日</th>
+                <td class="cell">0000年0月00日</td>
+              </tr>
+            </table>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.431171771455!2d139.74737144329427!3d35.666383887063155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b93a18a3a03%3A0x53be098c7d98c19b!2z6JmO44OO6ZaA44OS44Or44K6IOajruOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1744902417205!5m2!1sja!2sjp"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+        <!-- コンタクト -->
+        <section id="contact">
+          <div class="wid-box">
+            <h2 class="dai2">Contact</h2>
+            <h6 class="dai6">お問い合わせ</h6>
+            <form>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">お名前</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="入力してください"
+                    class="contact-textbox"
+                  />
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">フリガナ</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="kana"
+                    placeholder="入力してください"
+                    class="contact-textbox"
+                  />
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">メールアドレス</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="入力してください"
+                    class="contact-textbox"
+                  />
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">電話番号</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="tel"
+                    placeholder="入力してください"
+                    class="contact-textbox"
+                  />
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">お問い合わせ内容</label>
+                </div>
+                <div>
+                  <textarea
+                    class="contact-textarea"
+                    placeholder="入力してください"
+                    name="message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label">ご希望の連絡先</label>
+                </div>
+                <div class="radio">
+                  <input
+                    class="radiobutton"
+                    type="radio"
+                    value="tell"
+                    name="contact"
+                    checked
+                  /><label>お電話</label>
+                  <input
+                    class="radiobutton"
+                    type="radio"
+                    value="mail"
+                    name="contact"
+                  /><label>メール</label>
+                  <input
+                    class="radiobutton"
+                    type="radio"
+                    value="both"
+                    name="contact"
+                  /><label>どちらでも可</label>
+                </div>
+              </div>
+              <div class="contact-div">
+                <div class="contact-hd">
+                  <label class="contact-label-n">個人情報の取り扱い</label>
+                </div>
+                <div>
+                  <details>
+                    <summary>
+                      お問い合わせフォームの個人情報の取り扱いについて
+                    </summary>
+                    <div>
+                      <dl>
+                        <dt>１．組織の名称又は氏名</dt>
+                        <dd>株式会社SampleTech</dd>
+                        <dt>２．個人情報保護管理者（若しくはその代理人）</dt>
+                        <dd>
+                          <p>〇〇〇〇</p>
+                          <p>メールアドレス：sample@sample.com</p>
+                          <p>TEL：00-0000-0000</p>
+                        </dd>
+                        <dt>３．個人情報の利用目的</dt>
+                        <dd>
+                          <ul>
+                            <li>ここにテキストが入ります。</li>
+                            <li>
+                              これは試験的な文章です。テキストが入ります。
+                            </li>
+                            <li>テキストが入ります。</li>
+                          </ul>
+                        </dd>
+                        <dt>４．個人情報の取り扱い業務の委託</dt>
+                        <dd>
+                          文章が入ります。これは、試験的な文章です。テキストが入ります。テキストが、入ります。文章が入ります。
+                        </dd>
+                        <dt>５．個人情報の開示等の請求</dt>
+                        <dd>
+                          テキストが入ります。長い文章が、ここに入ります。<br />文章が入ります。テキストが入ります。これは、試験的な文章です。テキストが入ります。
+                        </dd>
+                        <dd>
+                          <p>株式会社SampleTech 個人情報問い合わせ窓口</p>
+                          <p>
+                            〒000-0000 東京都港区仮場所0丁目000-00
+                            サンプルビル7階
+                          </p>
+                          <p>
+                            メールアドレス：sample@sample.com<br />
+                            TEL：00TEL：00-0000-0000
+                          </p>
+                        </dd>
+                        <dt>６．個人情報を提供されることの任意性について</dt>
+                        <dd>
+                          これは、試験的な文章です。テキストが入ります。文章が入ります。テキストが入ります。長い文章が、ここに入ります。
+                        </dd>
+                      </dl>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div class="contact-b">
+                <input type="checkbox" name="agree" />
+                <span class="doi">個人情報の取り扱いについて同意する</span>
+                <p>※同意いただける場合はチェックをしてください。</p>
+                <input type="submit" value="送信する" class="submit-b" />
+              </div>
+            </form>
           </div>
         </section>
       </article>
     </main>
+    <!-- フッター -->
+    <footer>
+      <div class="wid-box">
+        <div class="footer-logo">
+          <!-- ロゴ -->
+          <h3 class="logo-img"><a href="index.html">SampleTech</a></h3>
+        </div>
+        <div class="footer-link">
+          <a href="mission.html">Mission</a>
+          <a href="product.html">Product</a>
+          <a href="index.html#aboutus">About</a>
+          <a href="index.html#vision">Vision</a>
+          <a href="index.html#company">Company</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <p class="copy">&copy;2025 SampleTech, Inc. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
